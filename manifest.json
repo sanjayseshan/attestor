@@ -1,0 +1,19 @@
+{
+
+    "description": "Auto attests for Covid Pass",
+    "manifest_version": 2,
+    "name": "Attestor for Covid Pass",
+    "version": "1.0",
+    "homepage_url": "https://github.com/sanjayseshan",
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.covidpass.mit.edu/*"],
+        "js": ["attestor.js"]
+      }
+    ]
+  
+  }
