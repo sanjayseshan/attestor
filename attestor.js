@@ -1,5 +1,5 @@
 function attest() {
-    offset = getRandomInt(30);
+    offset = parseInt(Math.random()*30);
     delay = 22*60*60*1000+offset*60*1000;
     setTimeout(() => {
         console.log("attest")
@@ -41,11 +41,11 @@ function attest() {
 
 
 console.log("starting attestor")
-offset = getRandomInt(30);
+offset = parseInt(Math.random()*30);
 delay = 22*60*60*1000+offset*60*1000;
 // delay = 10*60*1000
 setTimeout(() => {
     console.log("starting to attest")
 
     setInterval(attest(), delay);
-}, 20*60*60*1000);
+}, 1000);
