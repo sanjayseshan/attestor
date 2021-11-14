@@ -49,3 +49,8 @@ setTimeout(() => {
 
     setInterval(attest(), delay);
 }, 1000);
+setTimeout(() => {
+    console.log("reloading")
+
+    window.location.reload();
+}, delay);
